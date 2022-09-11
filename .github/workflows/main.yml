@@ -5,7 +5,7 @@ name: main
 on:
   push:
     branches:
-      - 'main'
+      - 'master'
 
 env: # тег, под которым будет храниться временный образ-кеш
   TEST_TAG: arhangel662/heroku-dev:test
