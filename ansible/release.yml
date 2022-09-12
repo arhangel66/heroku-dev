@@ -26,7 +26,7 @@
 
     - community.docker.docker_container:
         name: caddy
-        image: "arhangel662/heroku-dev:{{ version }}"
+        image: "arhangel662/devops-example-caddy:{{ version }}"
         restart_policy: always
         state: started
         networks:
