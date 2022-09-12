@@ -26,7 +26,6 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
 
-
       # Сборка и сразу кеширование, чтобы повторный запуск был быстрее
       - uses: docker/build-push-action@v2
         with:
