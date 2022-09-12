@@ -21,8 +21,6 @@
         networks:
           - name: devops-example
         # Делаем доступным снаружи
-        ports:
-          - 3000:3000
         env: # Настраиваем
           NODE_ENV: production
 

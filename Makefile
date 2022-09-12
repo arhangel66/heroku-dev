@@ -60,3 +60,8 @@ deploy:
 
 ssh:
 	ssh root@`yq e '.all.children.webservers.hosts.web1.ansible_host' ansible/inventory.yml`
+
+
+tag:
+	git tag -a v$(V) -m "v$(V)"
+	git push origin v$(V)
