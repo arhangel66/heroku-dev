@@ -1,4 +1,4 @@
-localhost, scandi-studio-sochi.ru {
+localhost, devops-example.test {
 	tls internal
 
 	handle /images/* {
