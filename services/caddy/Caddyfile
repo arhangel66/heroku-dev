@@ -1,6 +1,4 @@
 localhost, scandi-studio-sochi.ru {
-    tls internal
-
 	handle /images/* {
 		file_server
 		root * /app/public
