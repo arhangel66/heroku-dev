@@ -1,6 +1,4 @@
-localhost, devops-example.test {
-	tls internal
-
+localhost, scandi-studio-sochi.ru {
 	handle /images/* {
 		file_server
 		root * /app/public
@@ -10,4 +8,8 @@ localhost, devops-example.test {
 		reverse_proxy app:3000
 	}
 
+    # Включаем логгирование для удобной отладки
+    log {
+        format json
+    }
 }
